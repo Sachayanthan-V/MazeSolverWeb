@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCE AGV</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="fullScreenMode.css"> -->
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
+
+    <div class="fill" style="position: absolute;
+                            width: 100%;
+                            background: #232323;
+                            height: 130px;
+                            border: 2px solid whitesmoke;
+                            opacity: 1;
+                            margin-top: 47%;"    >
+
+    <p id="FooterPara" style=" margin-top: 30px; margin-left: 10cm; font-size:40px; justify-content: center; align-items:center; text-align:center; color: white;"> ADVANCED AUTOMATED GUIDED VEHICLE PHASE-1 </p>
+    </div>
+
+    <div class="AdvanceAgv">
+        <h1>
+            ADVANCE AGV
+        </h1>
+    </div>
+
+    <div class="flexContent">
+    
+        <div class="sidebar" style="width: 400px;">
+            <h2 class="capitalize" >
+                Project Details
+            </h2>
+    
+            <div class="sidebarContent">
+                <ul>
+                    <li><a href="#modal_about" class="open__modal__about">ABOUT</a></li>
+                    <li><a href="#modal_project">PROBLEM_STATEMENT</a></li>
+                    <li><a href="#modal_usage">ABSTRACT</a></li>
+                    <li><a href="#modal_base">SOLUTION </a></li>
+                    <li><a href="#modal_phase1">PHASE 1 </a></li>
+                    <li><a href="#modal_phase2">PHASE 2 </a></li>
+                    <li><a href="#modal_refrence">REFRENCE</a></li>
+                    <li><a href="#modal_memberDetails">MEMBER DETAILS</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <section>
+            <div class="inputSection">
+                <h1>
+                    INPUT SECTION
+                </h1>
+            </div>
+            <div>
+    
+            <!-- Input Box -->
+                <div class="inputBox">
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a00">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a01">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a02">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a03">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a04">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a05">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a06">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a07">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a08">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a10">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a11">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a12">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a13">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a14">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a15">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a16">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a17">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a18">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a20">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a21">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a22">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a23">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a24">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a25">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a26">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a27">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a28">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a30">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a31">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a32">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a33">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a34">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a35">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a36">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a37">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a38">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a40">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a41">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a42">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a43">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a44">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a45">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a46">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a47">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a48">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a50">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a51">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a52">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a53">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a54">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a55">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a56">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a57">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a58">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a60">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a61">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a62">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a63">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a64">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a65">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a66">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a67">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a68">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a70">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a71">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a72">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a73">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a74">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a75">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a76">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a77">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a78">         
+                    
+                    
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a80">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a81">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a82">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a83">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a84">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a85">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a86">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a87">         
+                    <input type="number" placeholder="0" max = "9" class = "small" id="a88">         
+    
+                </div>
+
+                <div class="choose4or8Way">
+
+                    <h1>Select Your Choice</h1>
+                    <select class="select4or8Way" id = "choose4or8" >
+                        <option value="0" selected disabled>4 or 8 way</option>
+                        <option value="FourWay">Four Way</option>
+                        <option value="EightWay">Eight Way</option>
+                    </select>
+                    
+                    <select class="startingPoint" id="startingPT" >
+                        <option value="0" selected disabled>Starting Point</option>
+                        
+                        <option value="a00">a00 </option>
+                        <option value="a01">a01 </option>
+                        <option value="a02">a02 </option>
+                        <option value="a03">a03 </option>
+                        <option value="a04">a04 </option>
+                        <option value="a05">a05 </option>
+                        <option value="a06">a06 </option>
+                        <option value="a07">a07 </option>
+                        <option value="a08">a08 </option>
+                        
+                        <option value="a10">a10 </option>
+                        <option value="a11">a11 </option>
+                        <option value="a12">a12 </option>
+                        <option value="a13">a13 </option>
+                        <option value="a14">a14 </option>
+                        <option value="a15">a15 </option>
+                        <option value="a16">a16 </option>
+                        <option value="a17">a17 </option>
+                        <option value="a18">a18 </option>
+                        
+                        <option value="a20">a20 </option>
+                        <option value="a21">a21 </option>
+                        <option value="a22">a22 </option>
+                        <option value="a23">a23 </option>
+                        <option value="a24">a24 </option>
+                        <option value="a25">a25 </option>
+                        <option value="a26">a26 </option>
+                        <option value="a27">a27 </option>
+                        <option value="a28">a28 </option>
+                        
+                        <option value="a30">a30 </option>
+                        <option value="a31">a31 </option>
+                        <option value="a32">a32 </option>
+                        <option value="a33">a33 </option>
+                        <option value="a34">a34 </option>
+                        <option value="a35">a35 </option>
+                        <option value="a36">a36 </option>
+                        <option value="a37">a37 </option>
+                        <option value="a38">a38 </option>
+                        
+                        <option value="a40">a40 </option>
+                        <option value="a41">a41 </option>
+                        <option value="a42">a42 </option>
+                        <option value="a43">a43 </option>
+                        <option value="a44">a44 </option>
+                        <option value="a45">a45 </option>
+                        <option value="a46">a46 </option>
+                        <option value="a47">a47 </option>
+                        <option value="a48">a48 </option>
+                        
+                        <option value="a50">a50 </option>
+                        <option value="a51">a51 </option>
+                        <option value="a52">a52 </option>
+                        <option value="a53">a53 </option>
+                        <option value="a54">a54 </option>
+                        <option value="a55">a55 </option>
+                        <option value="a56">a56 </option>
+                        <option value="a57">a57 </option>
+                        <option value="a58">a58 </option>
+                        
+                        <option value="a60">a60 </option>
+                        <option value="a61">a61 </option>
+                        <option value="a62">a62 </option>
+                        <option value="a63">a63 </option>
+                        <option value="a64">a64 </option>
+                        <option value="a65">a65 </option>
+                        <option value="a66">a66 </option>
+                        <option value="a67">a67 </option>
+                        <option value="a68">a68 </option>
+                        
+                        <option value="a70">a70 </option>
+                        <option value="a71">a71 </option>
+                        <option value="a72">a72 </option>
+                        <option value="a73">a73 </option>
+                        <option value="a74">a74 </option>
+                        <option value="a75">a75 </option>
+                        <option value="a76">a76 </option>
+                        <option value="a77">a77 </option>
+                        <option value="a78">a78 </option>
+                        
+                        <option value="a80">a80 </option>
+                        <option value="a81">a81 </option>
+                        <option value="a82">a82 </option>
+                        <option value="a83">a83 </option>
+                        <option value="a84">a84 </option>
+                        <option value="a85">a85 </option>
+                        <option value="a86">a86 </option>
+                        <option value="a87">a87 </option>
+                        <option value="a88">a88 </option>
+                        
+                        
+                    </select>
+
+                    <select class="endingPoint" id="endingPT" >
+                        <option value="0" selected disabled>Ending Point</option>
+                        
+                        <option value="a00">a00 </option>
+                        <option value="a01">a01 </option>
+                        <option value="a02">a02 </option>
+                        <option value="a03">a03 </option>
+                        <option value="a04">a04 </option>
+                        <option value="a05">a05 </option>
+                        <option value="a06">a06 </option>
+                        <option value="a07">a07 </option>
+                        <option value="a08">a08 </option>
+                        
+                        <option value="a10">a10 </option>
+                        <option value="a11">a11 </option>
+                        <option value="a12">a12 </option>
+                        <option value="a13">a13 </option>
+                        <option value="a14">a14 </option>
+                        <option value="a15">a15 </option>
+                        <option value="a16">a16 </option>
+                        <option value="a17">a17 </option>
+                        <option value="a18">a18 </option>
+                        
+                        <option value="a20">a20 </option>
+                        <option value="a21">a21 </option>
+                        <option value="a22">a22 </option>
+                        <option value="a23">a23 </option>
+                        <option value="a24">a24 </option>
+                        <option value="a25">a25 </option>
+                        <option value="a26">a26 </option>
+                        <option value="a27">a27 </option>
+                        <option value="a28">a28 </option>
+                        
+                        <option value="a30">a30 </option>
+                        <option value="a31">a31 </option>
+                        <option value="a32">a32 </option>
+                        <option value="a33">a33 </option>
+                        <option value="a34">a34 </option>
+                        <option value="a35">a35 </option>
+                        <option value="a36">a36 </option>
+                        <option value="a37">a37 </option>
+                        <option value="a38">a38 </option>
+                        
+                        <option value="a40">a40 </option>
+                        <option value="a41">a41 </option>
+                        <option value="a42">a42 </option>
+                        <option value="a43">a43 </option>
+                        <option value="a44">a44 </option>
+                        <option value="a45">a45 </option>
+                        <option value="a46">a46 </option>
+                        <option value="a47">a47 </option>
+                        <option value="a48">a48 </option>
+                        
+                        <option value="a50">a50 </option>
+                        <option value="a51">a51 </option>
+                        <option value="a52">a52 </option>
+                        <option value="a53">a53 </option>
+                        <option value="a54">a54 </option>
+                        <option value="a55">a55 </option>
+                        <option value="a56">a56 </option>
+                        <option value="a57">a57 </option>
+                        <option value="a58">a58 </option>
+                        
+                        <option value="a60">a60 </option>
+                        <option value="a61">a61 </option>
+                        <option value="a62">a62 </option>
+                        <option value="a63">a63 </option>
+                        <option value="a64">a64 </option>
+                        <option value="a65">a65 </option>
+                        <option value="a66">a66 </option>
+                        <option value="a67">a67 </option>
+                        <option value="a68">a68 </option>
+                        
+                        <option value="a70">a70 </option>
+                        <option value="a71">a71 </option>
+                        <option value="a72">a72 </option>
+                        <option value="a73">a73 </option>
+                        <option value="a74">a74 </option>
+                        <option value="a75">a75 </option>
+                        <option value="a76">a76 </option>
+                        <option value="a77">a77 </option>
+                        <option value="a78">a78 </option>
+                        
+                        <option value="a80">a80 </option>
+                        <option value="a81">a81 </option>
+                        <option value="a82">a82 </option>
+                        <option value="a83">a83 </option>
+                        <option value="a84">a84 </option>
+                        <option value="a85">a85 </option>
+                        <option value="a86">a86 </option>
+                        <option value="a87">a87 </option>
+                        <option value="a88">a88 </option>
+                        
+                                           </select>
+                    
+                    <div class="logicSelectorDiv">
+                        <input type="number" id="logicSelector"  placeholder="(4Way->1234) or (8Way->12345678)">
+                    </div>
+                    
+                    <h4 style="width: 250PX; height: 104px ; ">
+                        ALL ABOVE FIELDS ARE MANDITORY
+                    </h4>
+
+                </div>
+            </div>
+        </section>
+                <!--displayPathGreen-->
+        <button type="submit" onclick="mazeSolver()" id="solveBtn">
+            <h2>
+                SOLVE
+            </h2>
+        </button>
+
+        <div class="outputBody" id="outputBody" style="width: 100%; height: 91vh; background-color: antiquewhite;">
+            <div class="outputHeader">
+                <h1 class="outputHeaderh1">OUTPUT SECTION</h1>
+                <div class="UserSelectedOutput">
+                    <h3 id="startingPoint">Starting point &nbsp &nbsp : </h3>
+                    <h3 id="endingPoint">Ending Point&nbsp&nbsp&nbsp&nbsp&nbsp  : </h3>
+                    <h3 id="waySelector">Way Selected &nbsp&nbsp &nbsp : </h3>
+                    <h3 id="prioritySelector">Priority Selcted &nbsp: </h3>
+                </div>
+                <div class="flexOutput">
+
+                    <div class="outputPuzzle">
+                        
+                        <div>
+
+                            <div class="row">
+                                <div id = "b00" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b01" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b02" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b03" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b04" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b05" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b06" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b07" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b08" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b10" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b11" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b12" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b13" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b14" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b15" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b16" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b17" style="width: 40px; height: 39px; margin: 5px;"></div>
+                                <div id = "b18" style="width: 40px; height: 39px; margin: 5px;"></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b20" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b21" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b22" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b23" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b24" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b25" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b26" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b27" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b28" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b30" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b31" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b32" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b33" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b34" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b35" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b36" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b37" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b38" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b40" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b41" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b42" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b43" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b44" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b45" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b46" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b47" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b48" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b50" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b51" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b52" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b53" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b54" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b55" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b56" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b57" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b58" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b60" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b61" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b62" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b63" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b64" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b65" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b66" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b67" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b68" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b70" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b71" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b72" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b73" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b74" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b75" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b76" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b77" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b78" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+                            
+                            <div class="row">
+                                <div id = "b80" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b81" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b82" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b83" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b84" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b85" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b86" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b87" style="width: 40px; height: 39px; margin: 5px; "></div>
+                                <div id = "b88" style="width: 40px; height: 39px; margin: 5px; "></div>    
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="outputContainer">
+                        
+                        <h1><span><U>RESULTS : </U></span></h1><br>
+                        <h2 id="totalPathFound"    style="color: white;" >TOTAL &nbsp;PATH'S &nbsp;FOUND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </h2>
+                        <h2 id="minimumPathLength" style="color: white;" >MINIMUM &nbsp;&nbsp;PATH &nbsp;LENGTH :  </h2>
+                        <h2 id="maximumPathLength" style="color: white;" >MAXIMUM &nbsp;PATH &nbsp;LENGTH :  </h2>
+                        <h2 id="averagePathLength" style="color: white;" >AVERAGE &nbsp;&nbsp;&nbsp;PATH &nbsp;LENGTH :  </h2>
+                        <button id="ClickForOtherSolutionBtn"  > CLICK FOR OTHER SOLUTIONS </button>
+
+                        <br>
+                        <h1><span><U>MEMBERS : </U></span></h1><br>
+                        <h2 style="color: white;" >SACHAYANTHAN V &nbsp;&nbsp;[171201506]  </h2><br>
+                        
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+
+    </div> 
+
+    <!--MODAL ABOUT-->
+    <div class="modal__about" id="modal_about">
+        <div class="modal__content__about" >
+            <a href="#" class="modal__close__about" >&times;</a>
+            <h2 class="modal__heading__about" >
+                ABOUT US
+            </h2>
+            <p class="modal__para__about" style="font-size: 20px;">
+
+                This is the website for solving a maze problems with multifunctional algorithms created by Sachayanthan V 
+
+            </p>
+        </div>
+    </div>
+
+    <!--MODAL PROJECT | problem statement  -->
+    <div class="modal__project" id="modal_project">
+        <div class="modal__content__project">
+            <a href="#" class="modal__close__project">&times;</a>
+            <h2 class="modal__heading__project">
+                PROBLEM STATEMENT
+            </h2>
+            <p class="modal__para__project">
+
+                <span><b>FUNCTIONS OF AGV : </b></span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AGV [<span>A</span>utomated <span>G</span>uided <span>V</span>ehicle] . It is device or a Vehicle is used for transporting a things or product or a raw material from one place to another place using path tracker . path trackers such as line follower, gps and etc., 
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Speed and motion of the vehicle are fully programmed by the programmer based on line follower or an gsm. 
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; And extra facilities of the agv is obstacle avoidance to safely transport the products inside the industries. The obstacle avoidance is used to find any kind of obstacles are in these path and identifies the distance and safely stops the vehicles before hitting into it. The obstacle in industries such as humans walking, and some other agv flowing in these area , and etc.,
+                <br>
+                <br>
+                <span><b>PROBLEM OCCURING :</b></span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The obstacle avoidance is only used for flowable or movable objects , because at this time the agv stops it functioning. Therefore the obstacle is fixed or non-movable object the agv doesn't moves from here upto the object are cleared by human manually. This type of critical situation at industries causes the big lag to the production in industries.  
+
+            </p>
+        </div>
+    </div>
+    
+    <!--USAGE -- ABSTRACT -->
+    <div class="modal__usage" id="modal_usage">
+        <div class="modal__content__usage">
+            <a href="#" class="modal__close__usage">&times;</a>
+            <h2 class="modal__heading__usage">
+                ABSTRACT
+            </h2>
+            <p class="modal__para__usage">
+
+                The AUTOMATED GUIDED VEHICLE
+
+            </p>
+        </div>
+    </div>
+
+    <!-- BASE PROGRAM -- SOLUTION-->
+    <div class="modal__base" id="modal_base">
+        <div class="modal__content__base">
+            <a href="#" class="modal__close__base">&times;</a>
+            <h2 class="modal__heading__base">
+                SOLUTION 
+            </h2>
+            <p class="modal__para__base" style="font-size: 20px;">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;According to the problem occurs on the AGV </span> for the static or non-movable objects or a goods, the agv does not want to wait until clearing the path. so we need upgrade the agv into next level. so we want to combine the agv with maze solver capability. In case the agv meets the critical situation , the agv detects it static or movable obstacle, and if it is movable the agv works normally , else it acts as a maze solver to find the next path to reach the destination with shortest distance and move according to it.
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;so we create a device or a vechicle. The device is combination of <span>[Advance Agv] agv and maze solver.</span> 
+            </p>
+        </div>
+    </div>
+
+    
+    <!--ALGORITHM  --  PHASE-1 -->
+    <div class="modal__phase1" id="modal_phase1">
+        <div class="modal__content__phase1">
+            <a href="#" class="modal__close__phase1">&times;</a>
+            <h2 class="modal__heading__phase1">
+                PHASE 1
+            </h2>
+            <p class="modal__para__phase1" style="font-size: 20px;">
+                Later we upgrade this section.
+            </p>
+        </div>
+    </div>
+
+    <!--ALGORITHM  --  PHASE-2 -->
+    <div class="modal__phase2" id="modal_phase2">
+        <div class="modal__content__phase2">
+            <a href="#" class="modal__close__phase2">&times;</a>
+            <h2 class="modal__heading__phase2">
+                PHASE 2
+            </h2>
+            <p class="modal__para__phase2" style="font-size: 20px;">
+
+                Later we upgrade this section.
+
+            </p>
+        </div>
+    </div>
+
+    <!--ALGORITHM  --  REFRENCE -->
+    <div class="modal__refrence" id="modal_refrence">
+        <div class="modal__content__refrence">
+            <a href="#" class="modal__close__refrence">&times;</a>
+            <h2 class="modal__heading__refrence">
+                REFRENCE
+            </h2>
+            <p class="modal__para__refrence" style="font-size: 20px;">
+                Later we upgrade this section.
+            </p>
+        </div>
+    </div>
+
+    <!--MEMBER DETAILS-->
+    <div class="modal__memberDetails" id="modal_memberDetails">
+        <div class="modal__content__memberDetails">
+            <a href="#" class="modal__close__memberDetails">&times;</a>
+            <h2 class="modal__heading__memberDetails">
+                MEMBER DETAILS
+            </h2>
+            <p class="modal__para__memberDetails">
+
+                <div class="sachin" id="sachin">
+
+                    <div class="positionAll">
+                        <h2 class="position"> POSITION &nbsp;&nbsp;&nbsp;&nbsp;: <span> TEAM LEADER </span> </h2>
+                        <br>
+                        <h2 class="name"    > NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span>SACHAYANTHAN V</span></h2>
+                        <br>
+                        <h2 class="rollnum" >ROLLNUM &nbsp;&nbsp; : <span> 171201506 </span></h2>
+                        <br>
+                        <h2 class="college" >COLLEGE &nbsp&nbsp&nbsp : <span> RAJALAKSHMI ENGINEERING COLLEGE </span></h2>
+                        <br>
+                        <h2 class="roll" > ROLL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <span>WEB CREATOR AND LOGIC MAKER</span></h2>
+                        <br>                 
+                    </div>
+
+                    <img class="profileImg" src="/images/SACHAYANTHAN.jpg">
+
+                </div>
+
+
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Other Solutions -->
+    <div class="modal__OtherSolutions" id="modal_OtherSolutions">
+        
+        <button id="closeOtherSolutions">
+            <h1>Close</h1>
+        </button>
+    
+        <div class="modal__content__OtherSolutions" id="modal__content__OtherSolutions">
+    
+            <h2 class="modal__heading__OtherSolutions">
+                You're'll able to see all solutions here...
+            </h2>            
+    
+            <div id="appendable">
+                <!-- Content I Have To Append -->
+            </div>
+    
+            <p>
+                <h1>These are the solutions for your query  <span id="usernameAppend"></span>... </h1> <br><br><br><br>
+                <h2>If you finished.. please press close button to navigate the home page!.</h2> 
+                <h2 style=" color:rgb(31, 252, 178);  width: 100%; margin-left: auto; margin-right: 0px ">Created by <span style="font-weight: 900;">Sachayanthan V</span></h2>
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="loginPage" id="loginPage">
+
+        <div class="loginPageContent" id="loginPageContent" >
+            <div class="TextHeader">
+                <br>
+                <h1>LOGIN</h1>
+                <br>
+                <hr>
+            </div>
+            <br><br>
+            <input type="text" name="userName" id="userName" placeholder="User Name"  autoComplete="off" >
+            <br><br>
+            <button id="login" >LogIn</button>
+        </div>
+
+        <!-- style="visibility: hidden; opacity: 0 ;" -->
+    </div>
+
+    <div id="noteHead">
+        <div id="note" >
+            <p id="notePara"  >
+                <br><br>
+                <span style="font-size: 30px; ">NOTE : </span><br>
+                <br>
+                1) In input section 10 x 10 boxes are available, In this box you have to enter 1 or 0 for possible-way or no-way respectively.<br>
+                2) Select the maze traversing method 4-way direction or 8-way direction. <br>
+                3) Select starting point and ending point as per your need at next and next inputs..<br>
+                4) And "IMPORTANT: select maze solver route priority , if suppose you select 4-way <br>&nbsp;&nbsp;&nbsp;  direction you have to enter 4 digit number (eg: 1234: 1 for top, 2 for right, 3 for bottom <br>&nbsp;&nbsp;&nbsp;  and 4 for left) same for 8-way direction you have to enter 8 digit number <br>&nbsp;&nbsp;&nbsp;  (eg: 12345678: 1 for top, 2 for top-right, 3 for right, 4 for bottom-right, 5 for bottom,  <br>&nbsp;&nbsp;&nbsp; 6 for bottom-left, 7 for left and 8 for top-left ).<br>
+                <mark>Suppose, you missed anyone this website alert you to enter this properly..</mark> <br><br><br><br>
+                <span id="underline">Use "Full-Screen Mode" for better experience...</span><br>
+            </p>
+        </div>
+    </div>
+
+
+</body>
+
+    <script src="/index.js"></script>
+
+</html>

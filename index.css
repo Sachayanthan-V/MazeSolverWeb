@@ -1,0 +1,938 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    /* height: 100%; */
+    height: 100vh;
+    /* overflow-y: hidden; */
+    /* overflow-x: hidden; */
+}
+
+body {
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+/* #fullScreenMode {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: blue;
+    opacity: 0.5;
+}
+
+#fullScreenModeContent {
+    padding: 15px;
+} */
+
+.AdvanceAgv {
+    background: #232323;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: -50px;
+    width: 99.765%;
+    height: 60px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexContent { 
+    display: flex;
+    /* background-image: url("/images/background_img3.jpg"); */
+    object-fit:cover;
+    height: 91vh;
+}
+
+.sidebar{
+    background: #232323;
+    color:white;
+    width: 250px;
+    line-height: 30px;
+    position: sticky;
+    border-right: 5px solid white;
+    overflow: hidden;
+}
+
+.sidebar h2 {
+    line-height: 50px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    text-transform: uppercase;
+    height: 75px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.sidebarContent ul li{
+    text-decoration: none;
+    /* background-origin: padding-box; */
+    color: white;
+    transition: all .5s ease;
+    line-height: 70px;
+    padding-left: 25px;
+}
+
+.sidebarContent ul li a{
+    text-decoration: none;
+    /* background-origin: padding-box; */
+    color: white;
+    transition: all .5s ease;
+    line-height: 70px;
+    padding-left: 25px;
+}
+
+.sidebarContent ul li:hover, .sidebarContent ul li a:hover {
+    background-color: aqua;
+    color:green;
+}
+
+.inputSection {
+    
+    height: 75px;
+    width: 250px;
+    background: #232323;
+    text-align: center;
+    display: flex;
+    align-items: center;    
+    overflow: hidden;
+}
+
+.inputSection h1{
+ 
+    width: 250px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+
+.inputBox {
+    
+    background: red;
+    width: 250px;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.small {
+    width: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+    text-align: center;
+}
+
+section {
+    border-right: 5px solid white;
+    height: 100%;
+}
+
+#solveBtn {
+    
+    height: 91vh;
+    background-color: green;
+    /* border:1px solid white ; */
+    color: white;
+
+
+}
+
+#solveBtn:hover {
+    background-color: blue;
+}
+
+.choose4or8Way {
+    display: grid;
+    height: 100%;
+}
+
+.choose4or8Way h1{
+    background: #232323;
+    color: whitesmoke;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+.choose4or8Way h4{
+    background: #232323;
+    color: whitesmoke;
+    height: 50px;
+    font-stretch: ultra-expanded;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choose4or8Way select {
+    padding: 15px;
+}
+
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+
+/* About Modal */
+.modal__about {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__content__about {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.modal__close__about {
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading__about{
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__about{
+    line-height: 1.5em;
+}
+
+#modal_about:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_about:target .modal__content__about{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* project Modal -- PROBLEM STATEMENT */
+.modal__project {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__content__project {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+
+}
+
+
+.modal__close__project {
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading__project {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__project {
+    line-height: 1.5em;
+    font-size: 20px;
+}
+
+#modal_project:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_project:target .modal__content__project{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* usage Modal -- ABSTRACT : */
+.modal__usage {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__content__usage {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.modal__close__usage {
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading__usage {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__usage {
+    line-height: 1.5em;
+}
+
+#modal_usage:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_usage:target .modal__content__usage{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* BASE PROGRAM Modal -- SOLUTION : */
+.modal__base {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal__content__base {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.modal__close__base {
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading__base {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__base {
+    line-height: 1.5em;
+}
+
+#modal_base:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_base:target .modal__content__base{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ALGORITHM Modal */
+.modal__phase1 {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal__content__phase1 {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.modal__close__phase1 {
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading__phase1 {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__phase1 {
+    line-height: 1.5em;
+}
+
+#modal_phase1:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_phase1:target .modal__content__phase1{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/* ALGORITHM Modal */
+.modal__phase2 {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal__content__phase2 {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.modal__close__phase2 {
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading__phase2 {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__phase2 {
+    line-height: 1.5em;
+}
+
+#modal_phase2:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_phase2:target .modal__content__phase2{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* REFRENCE Modal */
+.modal__refrence {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal__content__refrence {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+.modal__close__refrence {
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+}
+
+.modal__heading__refrence {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__refrence {
+    line-height: 1.5em;
+}
+
+#modal_refrence:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_refrence:target .modal__content__refrence{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+/* memberDetails Modal */
+.modal__memberDetails {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+
+}
+
+.modal__content__memberDetails {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+
+.modal__close__memberDetails {
+    
+    color: #232323;
+    font-size: 2em;
+    position: absolute;
+    top: .5em;
+    right: 1em;
+
+}
+
+.modal__heading__memberDetails {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__memberDetails {
+    
+    line-height: 2.5em;
+    overflow: hidden;
+    
+}
+
+.profileImg {
+    /* position: absolute; */
+    top: 5em;
+    left: 2em;
+    width: 200px;
+}
+
+.sachin {
+    
+    overflow-x: auto;
+    height: 50vh;
+
+}
+
+.positionAll {
+    position: absolute;
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 100%;
+    margin-left: 15em;
+}
+
+.position, .name, .rollnum, .college, .roll {
+    color: darkolivegreen;
+}
+
+
+
+#modal_memberDetails:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal_memberDetails:target .modal__content__memberDetails{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+span {
+    color: darkgoldenrod;
+}
+
+.outputHeaderh1 {
+    text-align: center;
+    background-color: #232323;
+    color: white;
+    height:50px;
+    border-bottom: 2px solid white;
+}
+
+.UserSelectedOutput {
+    background-color: #232323;
+}
+
+.UserSelectedOutput h3{
+    margin-left: 50px;
+    line-height: 2em;
+    color: white;
+}
+
+.row {
+    display: flex;
+    margin-top:0 ;
+}
+
+.row div{
+    background-color: red;
+}
+.row div:hover{
+    background-color: #696969;
+}
+
+.outputPuzzle {
+    object-fit: contain;
+    width: 40%;
+    background-color: #232323;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.flexOutput {
+    display: flex;
+}
+
+.outputContainer {
+    background-color: #232323;
+    width: 100%;
+}
+
+#ClickForOtherSolutionBtn {
+    font-size: 35px;
+    padding: 5px;   
+    margin-top: 15px;
+}
+
+#ClickForOtherSolutionBtn:hover {
+    cursor: pointer;
+    color:green;
+    font-weight: 600;
+}
+
+
+
+
+/* Other Solutions */
+.modal__OtherSolutions {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal__content__OtherSolutions {
+    
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2em; 
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.modal__heading__OtherSolutions {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__para__OtherSolutions {
+    line-height: 1.5em;
+}
+
+#closeOtherSolutions {
+    position: fixed;
+    margin-left: 1300px;
+    margin-top: 50px;
+}
+
+.modal__content__OtherSolutions {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+/* login page */
+.loginPage 
+{
+    background-color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.loginPageContent 
+{
+    width: 20%;
+    height: 35%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1em;
+    border: 1px solid black;
+    box-shadow: 0px 0px 700px 700px purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginPageContent input {
+    height: 40px;
+    width: 250px;
+    border-radius: 7px;
+}
+
+.loginPageContent button {
+    height: 40px;
+    width: 250px;
+}
+
+.loginPageContent h1 {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black solid;
+    text-align: center;
+}
+
+.logicSelectorDiv {
+    width:99%;
+    background: #5d5d5d;
+}
+
+#logicSelector {
+    width:98%;
+    height:40px;
+}
+
+/* note */
+#noteHead {
+    background-color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0 ;
+    visibility: hidden;
+}
+
+#note {
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1em;
+    border: 1px solid black;
+    box-shadow: 0px 0px 700px 700px purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* visibility: hidden;
+    opacity: 0; */
+}
+
+#notePara {
+    width: 80%;
+    height: 80%;
+    font-size:18px;
+
+    /* text-align: justify; */
+    /* text-shadow: 1px 1px #6d6d6d; */
+}
+
+#underline {
+    text-decoration: underline;
+    color: black;
+}
+
+#line-through {
+    text-decoration: line-through;
+    color: black;
+}
