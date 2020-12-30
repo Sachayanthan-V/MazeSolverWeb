@@ -241,7 +241,6 @@ function mazeSolverUtility(curr_row, curr_col,dest_row,dest_col,visited,visitedC
         }
 
         // To appending the results into html ->  
-        // let divCounter = 0;        
         let solutionCounterContent = "<h1> " + solutionCounter + "<h1>";
         $('#appendable').append(solutionCounterContent);
         for(let ap=0;ap<9;ap++){
@@ -307,7 +306,6 @@ function mazeSolverUtility_8(curr_row, curr_col,dest_row,dest_col,visited,visite
         }
 
         // To appending the results into html ->  
-        // let divCounter = 0;        
         let solutionCounterContent = "<h1> " + solutionCounter + "<h1>";
         $('#appendable').append(solutionCounterContent);
         for(let ap=0;ap<9;ap++){
@@ -372,8 +370,6 @@ $('#ClickForOtherSolutionBtn').on('click', ()=>{
         alert(' No operation done yet! Please Done it first... ');
     }
     else{
-        let go_to_url = "/solutions.html";
-        // window.open(go_to_url, '_blank');
         $('#modal_OtherSolutions').css("opacity","1").css("visibility","visible");
         $('.modal__content__OtherSolutions').css("opacity","1").css("visibility","visible");
     }
@@ -396,10 +392,8 @@ $('#login').on('click',()=> {
         $('#loginPageContent').css('opacity','0').css('visibility','hidden');   
     }
 
-    // .delay(2000).fadeIn()
-    $('#noteHead').delay(1000).fadeIn(3000);//.css("opacity","1").css("visibility","visible").fadeIn(3000);
-    // $('#nodePara').css("opacity","1").css("visibility","visible");
-    $('#noteHead').delay(10000).fadeOut(10000); //.css("opacity","0").css("visibility","hidden");
+    $('#noteHead').css("opacity","1").css("visibility","visible");
+    $('#noteHead').delay(10000).fadeOut(10000);
 
 
 });
